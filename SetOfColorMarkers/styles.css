@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+}
+
+.marker{
+    width: 200px;
+    height: 25px;
+    /* Sets top, bottom, left and right margin to auto when only auto used. Now it sets bottom and top to 10 pixel*/
+    margin: 10px auto;
+}
+
+.red{
+    /* gradient allows a transition from one color to another color */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); */
+    /* box-shadow: offsetX offsetY blurRadius color; */
+    /* box-shadow: -5px -5px red; */
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+}
+
+.green{
+    /* secondary color which is created out of the basic colors red, green and blue */
+    /* tertiery colors are combined out of secondary colors */
+    /* it´s also possible to use 6 digits Hexdezimal from 000000 to FFFFFF */
+    /* default gradientDirection is 180 deg */
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0px 0px 20px 0px #3B7E20CC;
+}
+
+.blue{
+    /* HSL color stands for hue, saturation and lightness, values for hue ranges from 0 to 360 and the other two
+    parameters ranges from 0 to 100 %, Hue values: 0 for Red, 120 for Green and 240 for Blue */
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* box-shadow: offsetX offsetY blurRadius spreadRadius color; */
+    box-shadow: 0px 0px 20px 0px hsla(223, 59%, 31%, 0.8);
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+
+.sleeve{
+    width: 110px;
+    height: 25px;
+    /* rgba is with an additional value for alpha channel which does the same like opacity */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.5; */ 
+    /* short-hand-property, replaces the three following properties */
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+    /*
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black;
+    */
+}
+
+.cap{
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}

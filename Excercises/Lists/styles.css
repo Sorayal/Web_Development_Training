@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+  background-color: brown;
+}
+
+main {
+  padding: 1px 1px;
+  background-color: burlywood;
+}
+
+h1 {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 72px;
+}
+
+.ordered {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+}
+
+.unordered {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+  list-style: square;
+}

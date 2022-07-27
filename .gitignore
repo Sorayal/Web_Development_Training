@@ -1,0 +1,6 @@
+## IntelliJ ##
+.idea/
+
+## Visual Studio Code ##
+.vscode/
+.code-workspace

@@ -1,0 +1,15 @@
+/* In the CSS box model, every HTML element is treated as a box with four areas. 
+Imagine you receive a box from your favorite online retailer -- the content is the item in the box, or in our case, a header, paragraph, or image element. */
+
+.canvas{
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+}
+
+.frame{
+    border: solid black 50px;
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+}

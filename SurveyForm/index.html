@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Survey Form for Happiness</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form for Happiness</h1>
+    <p id="description">This is a survey about your happiness. Please provide us some data at the required fields and hit the submit button.</p>
+    <form id="survey-form" action="">
+      <fieldset>
+        <label id="name-label">Please enter your name: <input id="name" type="text" placeholder="Max Mustermann" required /> </label>
+        <label id="email-label">Please enter your email: <input id="email" type="email" placeholder="mustermann@muster.de" required /> </label>
+        <label id="number-label">Please enter your age: <input id="number" type="number" min="16" max="120" placeholder="30" required /> </label>
+        <label id="sex-label"
+          >Please choose your sex: <input type="radio" name="sex" value="male" required />Male <input type="radio" name="sex" value="female" required />Female
+          <input type="radio" name="sex" value="nonbinary" required />Non Binary
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="happiness">
+          Please select your happiness level from 1 (very low) to 5 (very high)
+          <select id="dropdown">
+            <option value="">...</option>
+            <option value="1">1 very low</option>
+            <option value="2">2 low</option>
+            <option value="3">3 medium</option>
+            <option value="4">4 high</option>
+            <option value="5">5 very high</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="list-activities"
+          >Which activities do you enjoy?
+          <p><input class="list-activities" type="checkbox" name="activities" value="running" />Running</p>
+          <p><input class="list-activities" type="checkbox" name="activities" value="swimming" />Swimming</p>
+          <p><input class="list-activities" type="checkbox" name="activities" value="hiking" />Hiking</p>
+          <p><input class="list-activities" type="checkbox" name="activities" value="bicycling" />Bicycling</p>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="feedback"
+          >Please provide us some feedback about this survey. Thank you.
+          <textarea rows="3" cols="60" name="feedback" placeholder="Feedback"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
