@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Maru" />
+    <link rel="stylesheet" type="text/css" href="#" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="#">
+        <fieldset>
+          <label for="age"></label
+          ><input
+            id="age"
+            name="age"
+            type="number"
+            min="14"
+            max="120"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            pattern="[a-z0-5]{8,}"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <label>Please choose your sex:</label>
+          <label
+            ><input
+              class="radio"
+              name="sex"
+              type="radio"
+              required
+            />Female</label
+          >
+          <label
+            ><input class="radio" name="sex" type="radio" required />Male</label
+          >
+          <label
+            ><input
+              class="radio"
+              name="sex"
+              type="radio"
+              required
+            />Undefined</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="upload">Please upload your file:</label>
+          <input
+            name="upload"
+            id="upload"
+            type="file"
+            accept="image/png, image/jpeg"
+          />
+        </fieldset>
+        <input name="one" id="one" type="hidden" value="1" />
+      </form>
+    </main>
+  </body>
+</html>
