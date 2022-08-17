@@ -8,25 +8,64 @@
   </head>
   <body>
     <h1>Forms Demo</h1>
+    <!--<button>Outside the form!</button>-->
     <!--Container for user input-->
     <!-- action attribute tells where to send the HTTP request when the form is submitted-->
     <form action="/tacos">
+      <button type="button">PLEASE DO NOT SUBMIT THE FORM!</button>
       <p>
         <label for="username">Enter a Username: </label>
-        <input type="text" id="username" placeholder="username" />
+        <!-- name attribute is important for the backend to figure out the send data , key/value pair -->
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          name="username"
+        />
       </p>
       <p>
+        <!-- needs to add Post request instead of Get Request to hide the send data -->
         <label for="password">Enter a Password: </label>
-        <input type="password" id="password" placeholder="password" />
+        <input
+          type="password"
+          id="password"
+          placeholder="password"
+          name="password"
+        />
       </p>
+      <!-- Default type="submit" -->
+      <button>In the middle, all leads to submit the form!</button>
       <p>
         <label for="color">Pick a color: </label>
-        <input type="color" id="color" />
+        <input type="color" id="color" name="color" />
       </p>
       <p>
         <label for="number">Enter a number: </label>
-        <input type="number" id="number" placeholder="Enter a number." />
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter a number."
+          name="num"
+        />
       </p>
+      <p>
+        <!-- Alternative less common form of a label-->
+        <label>
+          Enter a number:
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter a number."
+            name="num"
+          />
+        </label>
+      </p>
+      <button>Submit!!!</button>
+      <!-- Alternative way of a button -->
+      <input type="submit" value="Click on me!" />
     </form>
+    <hr />
+    <!-- No default behavior! -->
+    <button>Outside again</button>
   </body>
 </html>
