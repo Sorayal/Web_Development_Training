@@ -1,3 +1,4 @@
+/* a list of selectors */
 h1,
 h2,
 h3,
@@ -5,6 +6,15 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  /* shorthand grey */
+  color: #444;
+}
+
+/*Overwrites the former defined color */
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -42,10 +52,12 @@ li {
   font-size: 18px;
 }
 
+/* ID Selector */
 #copyright {
   font-size: 16px;
 }
 
+/* Class Selector */
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -53,6 +65,17 @@ li {
 
 .related {
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  color: #f7f7f7;
+  /*width 5px, solid form, color : shorthand property */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
 }
 
 /*Decendent Selector, selects child of footer
@@ -64,5 +87,11 @@ footer p {
 /* Nested Decendent Selector 
 article header p {
   font-style: italic;
+}
+*/
+
+/*
+body{
+  background-color: aquamarine;
 }
 */
