@@ -1,0 +1,5 @@
+
+JavaScript is not like a C language like Java. It´s influenced by Lisp.
+https://en.wikipedia.org/wiki/Lisp_(programming_language)
+https://en.wikipedia.org/wiki/ECMAScript
+
