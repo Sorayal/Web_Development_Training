@@ -1,0 +1,95 @@
+
+/* Applying textcolor red to heading 1 */
+/* 
+h1 - element selector
+color - property
+red - value
+color:red; - rule
+*/
+h1 {
+    color:red;
+}
+
+p, li{
+    color: green;
+}
+
+/*
+li - list element
+list-style-type - property for list-element
+none - value which should be used rather than default value 
+*/
+li {
+    list-style-type: none;
+}
+
+/*
+ordered list with thumb up list style 
+although li has already a defined style-type, it will
+be overwritten here because the class has a higher specificity 
+than the element.
+https://www.w3schools.com/css/css_specificity.asp#:~:text=Specificity%20Hierarchy
+
+The element has 1, the class has 10 => class selector wins
+in this case it´s actually 11 because element + class.
+Target any list element which belongs to the class "ordered_l1"
+*/
+li.ordered_l1 {
+    text-decoration: dotted;
+    color:blueviolet;
+    list-style-type: "\1F44D";
+}
+
+li.ordered_l2 {
+    text-decoration: dotted;
+    font-weight: bold;
+    color: #c7ca1ab7;
+    list-style-type: "\1F44D";
+}
+
+/* 
+Styling elements based on their location in the document 
+Here targets a list element which is empathized. 
+Descendant combinator
+li - parent tag
+em - child tag
+em is child of li here.
+*/
+li em {
+    color: rgb(153, 51, 85);
+}
+
+li span {
+    color: red;
+}
+
+/*
+Selecting two sibling tags which are adjacent to each other
+adjacent sibling combinator
+*/
+h1 + p {
+    font-size: 200%;
+}
+
+/*
+Styling based on state
+link, visited and hover a pseudoclasses which shows a specific state 
+for an element.
+*/
+a:link {
+    color:pink;
+}
+
+a:visited {
+    color:chartreuse;
+}
+
+a:hover {
+    color: crimson;
+    font-size: larger;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}

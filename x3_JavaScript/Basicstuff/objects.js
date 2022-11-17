@@ -49,6 +49,7 @@ company2.ceo = "Musk";
 console.log(company2.ceo);
 
 // setting up 'null', which indicates that there is no object,
-// even not an empty object.
+// even not an empty object. Using null only where to expect objects.
+// Otherwise use undefined.
 
 const ship = null;
