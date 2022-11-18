@@ -89,3 +89,36 @@ const resultArr = getDouble(primes);
 const resultArr2 = getDoubleAlt(primes);
 console.log(resultArr);
 console.log(resultArr2);
+
+/**
+ * 
+ * @param {the array with values which should be modified} arr 
+ * @param {the function to modify the values} fn 
+ * @returns - the modified array
+ */
+const getMultipleOfArrayValuesGeneric = function(arr, fn) {
+    const result = [];
+    // For each element take the element and call the given function fn to modify the value.
+    for(let i = 0; i < arr.length; i++) {
+        const item = arr[i];
+        const double = fn(item);
+        result.push(double);
+    }
+    return result;
+}
+
+const doubleValue = function(n){
+    return 2 * n;
+}
+
+const powThree = function(n){
+    return Math.pow(n, 3);
+}
+
+// give the primes array and the function doubleValue
+const resultArr3 = getMultipleOfArrayValuesGeneric(primes, doubleValue);
+console.log(resultArr3);
+
+// give the primes array and the function powThree
+const resultArr4 = getMultipleOfArrayValuesGeneric(primes, powThree);
+console.log(resultArr4);
