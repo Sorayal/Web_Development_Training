@@ -1,5 +1,0 @@
-Don´t use <b> anymore. It´s replaced by <strong> for HTML 5.
-<strong> has a semantic meaning.
-
-Same applies to <i> which shouldn´t be used anymore.
-Use <em> for emphasized(italic) text.
